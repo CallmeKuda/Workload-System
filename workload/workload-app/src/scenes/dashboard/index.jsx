@@ -11,7 +11,7 @@ const Dashboard = () => {
   return (
     <Box m="20px">
       {/* HEADER */}
-      <Box display="flex" justifyContent="space-between" alignItems="center">
+      <Box display="flex" justifyContent="space-between" alignItems="center" >
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
 
         <Box>
@@ -41,7 +41,7 @@ const Dashboard = () => {
         {/* Teaching */}
         <Box
           gridColumn="span 4"
-          gridRow="span 2"
+          gridRow="span 1"
           backgroundColor={colors.primary[400]}
           p="30px"
         >
@@ -55,19 +55,23 @@ const Dashboard = () => {
             alignItems="center"
             mt="10px"
           >
-            <Typography>Hours /Semester</Typography>
+           
+            <Typography variant="h2" fontWeight="600">
+           590.1
+          </Typography> 
+          <Typography>Hours /Semester</Typography>
           </Box>
         </Box>
 
        {/* Research*/}
        <Box
           gridColumn="span 4"
-          gridRow="span 2"
+          gridRow="span 1"
           backgroundColor={colors.primary[400]}
           p="30px"
         >
           <Typography variant="h5" fontWeight="600">
-           Teaching Workload
+          Research Workload
           </Typography>
 
           <Box
@@ -76,19 +80,22 @@ const Dashboard = () => {
             alignItems="center"
             mt="10px"
           >
-            <Typography>Hours /Semester</Typography>
+           <Typography variant="h2" fontWeight="600">
+           267.0
+          </Typography> 
+          <Typography>Hours /Semester</Typography>
           </Box>
         </Box>
        
         {/* Research*/}
         <Box
           gridColumn="span 4"
-          gridRow="span 2"
+          gridRow="span 1"
           backgroundColor={colors.primary[400]}
           p="30px"
         >
           <Typography variant="h5" fontWeight="600">
-           Teaching Workload
+           Admin Workload
           </Typography>
 
           <Box
@@ -97,8 +104,39 @@ const Dashboard = () => {
             alignItems="center"
             mt="10px"
           >
-            <Typography>Hours /Semester</Typography>
+           <Typography variant="h2" fontWeight="600">
+           43.0
+          </Typography> 
+          <Typography>Hours /Semester</Typography>
           </Box>
+
+          
+        </Box>
+
+         {/* Research*/}
+         <Box
+          gridColumn="span 4"
+          gridRow="span 1"
+          backgroundColor={colors.primary[400]}
+          p="30px"
+        >
+          <Typography variant="h5" fontWeight="600">
+           Community Service
+          </Typography>
+
+          <Box
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            mt="10px"
+          >
+           <Typography variant="h2" fontWeight="600">
+           20.0
+          </Typography> 
+          <Typography>Hours /Semester</Typography>
+          </Box>
+
+          
         </Box>
         <Box height="200px">
             <Calendar isDashboard={true} />

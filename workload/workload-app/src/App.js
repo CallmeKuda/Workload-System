@@ -15,18 +15,23 @@ import Calendar from "./scenes/calendar/calendar";
 import "./style.scss";
 
 
+
 function App() {
   const [theme, colorMode] = useMode();
   const [isSidebar, setIsSidebar] = useState(true);
   return (
+
     <ColorModeContext.Provider value={colorMode}>
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      
     <div className="app">
     <Sidebar isSidebar={isSidebar} />
     <main className="content">
     <Topbar setIsSidebar={setIsSidebar} />
+    
     <Routes>
+      
               <Route path="/" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
               <Route path="/teaching" element={<Teaching />} />
@@ -40,6 +45,7 @@ function App() {
     </div>
     </ThemeProvider>
     </ColorModeContext.Provider>
+   
   );
 }
 
